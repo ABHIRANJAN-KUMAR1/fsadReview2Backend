@@ -15,4 +15,4 @@ RUN ./mvnw clean package -DskipTests
 EXPOSE 8080
 
 # Run the jar
-CMD ["java", "-jar", "target/fsadReview2Backend-0.0.1-SNAPSHOT.jar"]
+CMD ["sh", "-c", "java -jar target/*.jar"]
